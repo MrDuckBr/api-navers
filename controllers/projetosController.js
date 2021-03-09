@@ -39,10 +39,10 @@ router.post('/', async  (req, res)=>{
 
 
 router.get('/:id', async (req,res)=>{
-    console.log('cheguei aqui')
+   
     try{
     const {id} = req.params
-    console.log(id)
+    
     const projetos = await database.query('SELECT * FROM projeto WHERE id = $1',[id])
 
     const projeto_navers = await database.query('SELECT * FROM projeto_navers WHERE projeto_id = $1',[id])
@@ -89,12 +89,12 @@ router.put('/:id', async (req,res)=>{
 router.delete('/:id', async (req,res)=>{
     try{
     const {id} = req.params
-    console.log(id)
+    
     const projetos = await database.query('DELETE FROM projeto WHERE id = $1',[id])
-    console.log(projetos)
+    
     res.json(projetos.rows[0])
     }catch(err){
-        console.log(err)
+        res.json("Projeto não deletado")
     }
 
 })

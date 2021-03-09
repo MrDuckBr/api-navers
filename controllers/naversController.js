@@ -19,7 +19,7 @@ router.post('/', async  (req, res)=>{
     
         try{
             const {name, birthdate , admission_date , job_role,projects} = req.body
-            console.log(projects)
+            
             const response = await database.query('INSERT INTO navers (name, birthdate , admission_date , job_role) VALUES ($1,$2,$3,$4) RETURNING *',
                 [name, birthdate , admission_date, job_role])
                 const id = response.rows[0].id
@@ -81,12 +81,12 @@ router.put('/:id', async (req,res)=>{
 router.delete('/:id', async (req,res)=>{
     try{
     const {id} = req.params
-    console.log(id)
+    
     const naver = await database.query('DELETE FROM navers WHERE id = $1',[id])
-    console.log(naver)
+    
     res.json(naver.rows[0])
     }catch(err){
-        console.log(err)
+        res.send("Naver não deletado")
     }
 
 })
