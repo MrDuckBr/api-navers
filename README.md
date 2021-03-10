@@ -1,4 +1,4 @@
-# api-navers
+# API - Navers
 
 ## CodeSandBox
 Acesse clicando no link
@@ -10,7 +10,7 @@ node => versão 14.15.1
 express => versão 4.17.1
 node-pg => 8.5.1
 
-postgres
+postgres => versão 13
 ```
 
 ### Testando o sistema:
@@ -61,9 +61,8 @@ Os desafios podem ser encontrados dentro da pasta desafio
 ├── index.js
 ├── Insomnia_Requests
 │   └── Insominia_Testes_Nave.json
-├── models
-│   └── config
-│       └── db.js
+├── config
+│   └── db.js
 ├── nodemon.json
 ├── package.json
 ├── package-lock.json
