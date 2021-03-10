@@ -38,3 +38,5 @@ npm run serve
 ```
 Os testes da API seguem no arquivo do insominia onde contém todas as rotas para testes e o modelo de entrada de dados que se encontra na pasta "Insomnia_Requests"
 
+
+Os desafios podem ser encontrados dentro da pasta desafio
