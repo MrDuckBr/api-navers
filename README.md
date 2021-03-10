@@ -34,6 +34,7 @@ npm i
 Após as dependencias terem sido devidamente instaladas utilize o comando abaixo para rodar o servidor.
 
 ```
-npm serve run
+npm run serve
 ```
+Os testes da API seguem no arquivo do insominia onde contém todas as rotas para testes e o modelo de entrada de dados que se encontra na pasta "Insomnia_Requests"
 
