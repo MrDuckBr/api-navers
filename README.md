@@ -15,7 +15,7 @@ postgres => versão 13
 
 ### Testando o sistema:
 
-Inicialmente para que o sistema possa ser testado, pelo fato de não ter sido utilizado um framework que automatize a criação das models, nem do banco de dados, deve ser feito de forma manual a criação do banco, no projeto foi utilizado o postgres, abaixo um exemplo de configuração do banco de dados ou pode ser visto no arquivo "db.js" que se encontra dentro de config: 
+Inicialmente para que o sistema possa ser testado, pelo fato de não ter sido utilizado um framework que automatize a criação das models, nem do banco de dados, deve ser feito de forma manual a criação do banco no próprio pgAdmin, no projeto foi utilizado o postgres, abaixo um exemplo de configuração do banco de dados utilizando o "node-pg" ou pode ser visto no arquivo "db.js" que se encontra dentro de config: 
 
 ```
     user: 'postgres',
