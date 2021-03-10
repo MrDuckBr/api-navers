@@ -40,3 +40,32 @@ Os testes da API seguem no arquivo do insominia onde contém todas as rotas para
 
 
 Os desafios podem ser encontrados dentro da pasta desafio
+
+## Árvore de navegação
+```
+.
+├── controllers
+│   ├── index.js
+│   ├── naversController.js
+│   └── projetosController.js
+├── database
+│   ├── navers.sql
+│   ├── projeto_navers.sql
+│   └── projeto.sql
+├── desafio
+│   ├── 1-criar_deletarTabelas.sql
+│   ├── 2 -inserirLimparTabelas.sql
+│   ├── 3-querieOrdenada.sql
+│   ├── 4-querieRetornaNavers.sql
+│   └── 5-querieComCont.sql
+├── index.js
+├── Insomnia_Requests
+│   └── Insominia_Testes_Nave.json
+├── models
+│   └── config
+│       └── db.js
+├── nodemon.json
+├── package.json
+├── package-lock.json
+└── README.md
+```
